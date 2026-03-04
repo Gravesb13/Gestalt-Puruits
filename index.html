@@ -285,7 +285,8 @@
   </div>
 
   <div class="class-nav">
-    <button class="class-tab active" onclick="show('artificer')">Artificer</button>
+    <button class="class-tab active" onclick="show('overview')">Overview</button>
+    <button class="class-tab" onclick="show('artificer')">Artificer</button>
     <button class="class-tab" onclick="show('barbarian')">Barbarian</button>
     <button class="class-tab" onclick="show('bard')">Bard</button>
     <button class="class-tab" onclick="show('cleric')">Cleric</button>
@@ -298,6 +299,43 @@
     <button class="class-tab" onclick="show('sorcerer')">Sorcerer</button>
     <button class="class-tab" onclick="show('warlock')">Warlock</button>
     <button class="class-tab" onclick="show('wizard')">Wizard</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ OVERVIEW -->
+  <div class="feat-panel active" id="overview">
+    <div class="feat-title-row">
+      <span class="feat-main-name">Class Feats</span>
+      <span class="feat-class-label">Optional Rules</span>
+    </div>
+    <p class="feat-flavor">These rules introduce a new category of high-powered feats that represent deep investment in a second discipline. Where standard feats represent broad talent, Class Feats represent dedication — the kind of study, training, or communion that reshapes who a character fundamentally is.</p>
+
+    <div class="tier-block tier-1">
+      <div class="tier-block-header"><span class="tier-pip">THE BASICS</span><span class="tier-feature-name">What Are Class Feats?</span></div>
+      <div class="tier-body">
+        <p>Class Feats are a new optional feat category that grants characters access to features from another class. Unlike standard feats, each Class Feat is a four-tier investment — representing the slow, earned mastery of a second discipline over the course of an adventuring career.</p>
+        <p>Each feat is tied to a specific class (Barbarian, Bard, Cleric, etc.) and grants that class's most iconic features in a scaled, balanced form. A Fighter who invests in the Wizard feat doesn't become a Wizard — but by level 20, they will cast spells in a way that feels meaningfully arcane.</p>
+        <p>Class Feats are <strong>homebrew optional rules</strong> and are not part of the official 2024 D&D rules. All features within them are designed to complement the 2024 Player's Handbook rules. DM approval is recommended before using these feats, and some higher-tier subclass features may require additional table discussion.</p>
+      </div>
+    </div>
+
+    <div class="tier-block tier-2">
+      <div class="tier-block-header"><span class="tier-pip">WHEN TO TAKE THEM</span><span class="tier-feature-name">The Extra Feat Rule</span></div>
+      <div class="tier-body">
+        <p>Class Feats use the following optional rule: <strong>at levels 5, 10, 15, and 20, each character gains one bonus feat that must be spent on a Class Feat.</strong></p>
+        <p>This means a character gains up to four Class Feat tiers over their career, one at each of those milestone levels. They may invest all four tiers into a single class feat (building deep mastery of one discipline) or spread them across different class feats (sampling multiple disciplines at Tier I or II).</p>
+        <p><strong>Example:</strong> A Paladin reaches level 5 and takes Tier I of the Wizard feat, gaining a Spellbook and Arcana expertise. At level 10 they take Tier II of the same feat, gaining Arcane Recovery and a school feature. At level 15 they branch out and take Tier I of the Barbarian feat, gaining Rage. At level 20 they return to Wizard and take Tier III.</p>
+      </div>
+    </div>
+
+    <div class="tier-block tier-3">
+      <div class="tier-block-header"><span class="tier-pip">TIER REQUIREMENTS</span><span class="tier-feature-name">Advancing a Feat</span></div>
+      <div class="tier-body">
+        <p><strong>Tiers must be taken in order.</strong> You cannot take Tier II of a Class Feat unless you already have Tier I, and so on. Each tier builds on the previous — all lower-tier features are retained and sometimes enhanced when you advance.</p>
+        <p><strong>You can invest in multiple Class Feats simultaneously</strong>, but each feat's tiers must still be taken in order. A character could have Tier I of the Rogue feat and Tier I of the Druid feat at the same time, having spent their level 5 and level 10 bonus feats on different classes.</p>
+        <p><strong>Each Class Feat tier requires the previous tier of the same feat as a prerequisite.</strong> There are no ability score prerequisites for these feats, though your DM may choose to add them for their table.</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- ══════════════════════════════════════════════ BARBARIAN -->
@@ -364,7 +402,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Full Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 5th level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -429,7 +467,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Full Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 5th level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -494,7 +532,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Full Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 5th level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -660,7 +698,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Half Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 3rd level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -725,7 +763,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Half Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 3rd level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -842,7 +880,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Full Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 5th level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -953,7 +991,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Full Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 5th level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -1005,7 +1043,7 @@
   </div>
 
   <!-- ══════════════════════════════════════════════ ARTIFICER -->
-  <div class="feat-panel active" id="artificer">
+  <div class="feat-panel" id="artificer">
     <div class="feat-title-row">
       
       <span class="feat-main-name">Arcane Inventor</span>
@@ -1018,7 +1056,7 @@
     <div class="spellcaster-block-header">✦ Spellcasting — Half Caster</div>
     <div class="tier-body">
       <p>Each time you take a tier of this feat, you can prepare <strong>2 additional spells</strong> from this class's spell list. Spells must be of a level for which you have spell slots from this feat. You may replace any of these prepared spells when you gain a level.</p>
-      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. These spell slots form a <strong>separate pool</strong> from any class spell slots you already have — they cannot be combined and are regained on a Long Rest. If you <em>already</em> have the Spellcasting feature, these slots are added to your existing pool instead.</p>
+      <p>If you do not already have the <strong>Spellcasting</strong> feature, you gain it now, using the ability score associated with this class. Spell slots gained from this feat are regained on a Long Rest.</p>
       <p>You gain <strong>one spell slot at each spell level</strong> the base class has unlocked at that tier, as shown below. Each tier's slots are cumulative — taking Tier II means you have one slot at each of 1st through 3rd level.</p>
       <table class="slot-table">
         <thead><tr><th>Tier</th><th>New Levels Unlocked</th><th>Total Slots (one per level)</th></tr></thead>
@@ -1073,7 +1111,7 @@
 
   <div style="font-size:0.82rem; line-height:1.8; color:var(--ink-soft); font-style:italic; border: 1px solid var(--parchment-dark); padding: 1rem 1.2rem; background: rgba(255,255,255,0.3); margin-top:1.5rem;">
     <strong style="font-family:'Cinzel',serif; font-size:0.78rem; color:var(--red); font-style:normal;">Designer's Notes.</strong>
-    Each feat is taken at level 5 (Tier I), 10 (Tier II), 15 (Tier III), and 20 (Tier IV), and requires the previous tier. All lower-tier benefits are cumulative. Subclass features gained at Tier III–IV are intended as a capstone reward for full investment, and DM approval is recommended for those features. Tier IV features are intentionally near the power level of a 4–5 level multiclass dip, balanced by the opportunity cost of the class feat slots.
+    Each feat is taken at level 5 (Tier I), 10 (Tier II), 15 (Tier III), and 20 (Tier IV), and requires the previous tier. All lower-tier benefits are cumulative. Subclass features gained at Tier III–IV are intended as a capstone reward for full investment, and DM approval is recommended for those features.
   </div>
 
   <footer>Homebrew Tiered Class Feats · D&D 5e (2024) · Not official Wizards of the Coast content</footer>
